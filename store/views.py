@@ -54,7 +54,7 @@ def edit_review(request, review_id):
         if form.is_valid():
             form.save()
             # Redirect to the review detail page or a thank-you page
-            return redirect('thank_you')
+            return redirect('home')
     else:
         form = ReviewForm(instance=review)
 
