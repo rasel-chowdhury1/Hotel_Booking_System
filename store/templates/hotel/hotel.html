@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block body %}
 <!-- ========================= SECTION PAGETOP ========================= -->
-<section class="section-pagetop bg">
+<section class="section-pagetop mt-3 bg">
   <div class="container">
     <h2 class="title-page">Our Hotel</h2>
   </div>
@@ -23,12 +23,13 @@
 
         <div class="row">
           {% for hotel in hotels %}
+
           <div class="col-md-6">
             <div class="card mb-3" style="max-width: 540px">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
-                    src="{{ hotel.image.url }}"
+                    src="{{hotel.image.url}}"
                     class="img-fluid rounded-start"
                     alt="hotel_image"
                   />
