@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
 {% block body %}
+{% if error_message %}
+<div class="alert alert-danger">
+  <strong>Error(s): {{error_message}}</strong>
+</div>
+{% endif %}
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-conten padding-y" style="min-height:84vh">
 
